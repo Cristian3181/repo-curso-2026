@@ -1,0 +1,182 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20260827155939
+Nombre de usuario: DESKTOP-7338A8F\Cristian
+Usuario RunAs: DESKTOP-7338A8F\Cristian
+Nombre de la configuración: 
+Máquina: DESKTOP-7338A8F (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 16656
+PSVersion: 5.1.26100.9168
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9168
+BuildVersion: 10.0.26100.9168
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es .\tareas\tareas01\tarea01.txt
+PS C:\Users\Cristian\documents\repo-curso-2026> cd home
+cd : No se encuentra la ruta de acceso 'C:\Users\Cristian\documents\repo-curso-2026\home' porque no existe.
+En línea: 1 Carácter: 1
++ cd home
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Cristi...curso-2026\home:String) [Set-Location], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : No se encuentra la ruta de acceso
+'C:\Users\Cristian\documents\repo-curso-2026\home' porque
+no existe.
+En línea: 1 Carácter: 1
++ cd home
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Cr
+   isti...curso-2026\home:String) [Set-Location], ItemNot
+  FoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.Power
+   Shell.Commands.SetLocationCommand
+
+PS C:\Users\Cristian\documents\repo-curso-2026> cd
+PS C:\Users\Cristian\documents\repo-curso-2026> pwd
+
+Path
+----
+C:\Users\Cristian\documents\repo-curso-2026
+
+
+PS C:\Users\Cristian\documents\repo-curso-2026> clear
+PS C:\Users\Cristian\documents\repo-curso-2026> pwd
+
+Path
+----
+C:\Users\Cristian\documents\repo-curso-2026
+
+
+PS C:\Users\Cristian\documents\repo-curso-2026> cd ..
+PS C:\Users\Cristian\documents> pwd
+
+Path
+----
+C:\Users\Cristian\documents
+
+
+PS C:\Users\Cristian\documents> cd repo-curso-2026
+PS C:\Users\Cristian\documents\repo-curso-2026> mkdir carpeta_tuturial
+
+
+    Directorio: C:\Users\Cristian\documents\repo-curso-2026
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     16:06                carpeta_t
+                                                  uturial
+
+
+PS C:\Users\Cristian\documents\repo-curso-2026> cd carpeta_tutorial
+cd : No se encuentra la ruta de acceso 'C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial' porque no existe.
+En línea: 1 Carácter: 1
++ cd carpeta_tutorial
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Cristi...arpeta_tutorial:String) [Set-Location], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : No se encuentra la ruta de acceso 'C:\Users\Cristian\d
+ocuments\repo-curso-2026\carpeta_tutorial' porque no
+existe.
+En línea: 1 Carácter: 1
++ cd carpeta_tutorial
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Cr
+   isti...arpeta_tutorial:String) [Set-Location], ItemNot
+  FoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.Power
+   Shell.Commands.SetLocationCommand
+
+PS C:\Users\Cristian\documents\repo-curso-2026> mkdir carpeta_tutorial
+
+
+    Directorio: C:\Users\Cristian\documents\repo-curso-2026
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     16:07                carpeta_t
+                                                  utorial
+
+
+PS C:\Users\Cristian\documents\repo-curso-2026> cd carpeta_tutorial
+PS C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial> mkdir dir1, dir2
+
+
+    Directorio: C:\Users\Cristian\documents\repo-curso-2026
+    \carpeta_tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         27/8/2026     16:07                dir1
+d-----         27/8/2026     16:07                dir2
+
+
+PS C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial> echo "texto de prueba" > archivo.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="texto de prueba"
+PS C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial> cp archivo.txt copia.txt
+PS C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial> mv copia.txt dir1\
+PS C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial> ls
+
+
+    Directorio: C:\Users\Cristian\documents\repo-curso-2026
+    \carpeta_tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da----         27/8/2026     16:08                dir1
+d-----         27/8/2026     16:07                dir2
+-a----         27/8/2026     16:07             36 archivo.t
+                                                  xt
+
+
+PS C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial> rm archivo.txt
+PS C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial> ls dir1\
+
+
+    Directorio:
+    C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial\dir1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         27/8/2026     16:07             36 copia.txt
+
+
+PS C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial> echo "manzana" > frutas.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="manzana"
+PS C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial> echo "pera" >> frutas.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="pera"
+PS C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial> echo "manzana" >> frutas.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="manzana"
+PS C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial> cat frutas.txt
+manzana
+pera
+manzana
+PS C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial> cat frutas.txt | sort
+manzana
+manzana
+pera
+PS C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial> cat frutas.txt | sort | uniq
+
+PS C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial> cat frutas.txt | sort | uniq | wc -l
+
+PS C:\Users\Cristian\documents\repo-curso-2026\carpeta_tutorial> cd ..
+PS C:\Users\Cristian\documents\repo-curso-2026> rm -r
+>> ErrorTerminación(): "Se ha detenido la canalización."
+>> ErrorTerminación(): "Se ha detenido la canalización."
+PS C:\Users\Cristian\documents\repo-curso-2026> rm -r carpeta_tutorial
+PS C:\Users\Cristian\documents\repo-curso-2026> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20260827161811
+**********************
