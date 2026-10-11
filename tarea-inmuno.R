@@ -1,3 +1,8 @@
+# NOTA DE ENTREGA: Trabajo práctico realizado de manera individual debido a inasistencia 
+# en la sesión grupal. El presente script contiene el análisis estructural completo 
+# y responde a cada una de las pautas requeridas para el conjunto de datos "immuno" 
+#del paquete "igraphdata".
+
 #install.packages("igraphdata")
 library(igraph)          # "calculadora de redes"
 library(igraphdata)      
